@@ -4,7 +4,7 @@ import { addTodo } from './store/todoSlice';
 
 
 import TodoList from './components/TodoList';
-import InputField from './components/InputField';
+import NewTodoForm from './components/NewTodoForm';
 
 import './App.css';
 
@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <InputField
+      <NewTodoForm
         text={text}
         handleInput={setText}
         handleSubmit={addTask}
